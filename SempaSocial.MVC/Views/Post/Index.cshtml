@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@* @model List<GetPostVM>
+@{
+}
+
+
+
+@foreach (var item in Model)
+{
+    <div class="card border-0">
+        @if(item.Image !=null)
+        {
+            <img alt="" class="w-full h-auto rounded-t-xl" src="/static/metronic/tailwind/dist/assets/media/images/600x400/21.jpg">
+
+        }
+        <div class="card-border card-rounded-b flex flex-col gap-2 px-5 py-4.5">
+            <a class="text-lg font-medium text-gray-900 hover:text-primary" href="/metronic/tailwind/demo1/public-profile/profiles/company">
+               @item.Body
+            </a>
+            <div class="flex items-center justify-between grow">
+                <div class="flex items-center grow">
+                    <img alt="" class="rounded-full size-7 me-2" src="/static/metronic/tailwind/dist/assets/media/avatars/300-6.png">
+                    <a class="text-2sm text-gray-800 hover:text-primary mb-px" href="/metronic/tailwind/demo1/public-profile/profiles/nft">
+                       @item.UserName
+                    </a>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <div class="flex gap-1 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
+                        <span class="text-2sm text-gray-800 py-2">
+                           0
+                        </span>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                        <i class="ki-filled ki-messages text-base text-gray-500">
+                        </i>
+                        <span class="text-2sm text-gray-800 py-2">
+                            0
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+}
+ *@
+
+
+                           test
